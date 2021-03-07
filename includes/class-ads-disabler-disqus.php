@@ -2,10 +2,10 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-class Remove_Disqus_Ads {
+class Disable_Disqus_Ads {
 
 	/**
-	 * The single instance of Remove_Disqus_Ads.
+	 * The single instance of Disable_Disqus_Ads.
 	 * @var 	object
 	 * @access  private
 	 * @since 	1.0.0
@@ -68,7 +68,7 @@ class Remove_Disqus_Ads {
 	 */
 	public function __construct ( $file = '', $version = '1.0.0' ) {
 		$this->_version = $version;
-		$this->_token = 'remove_disqus_ads';
+		$this->_token = 'Disable_Disqus_Ads';
 
 		// Load plugin environment variables
 		$this->file = $file;
@@ -94,14 +94,14 @@ class Remove_Disqus_Ads {
 	} // End enqueue_scripts ()
 
 	/**
-	 * Main Remove_Disqus_Ads Instance
+	 * Main Disable_Disqus_Ads Instance
 	 *
-	 * Ensures only one instance of Remove_Disqus_Ads is loaded or can be loaded.
+	 * Ensures only one instance of Disable_Disqus_Ads is loaded or can be loaded.
 	 *
 	 * @since 1.0.0
 	 * @static
-	 * @see Remove_Disqus_Ads()
-	 * @return Main Remove_Disqus_Ads instance
+	 * @see Disable_Disqus_Ads()
+	 * @return Main Disable_Disqus_Ads instance
 	 */
 	public static function instance ( $file = '', $version = '1.0.0' ) {
 		if ( is_null( self::$_instance ) ) {

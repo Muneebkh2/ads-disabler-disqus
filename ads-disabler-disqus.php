@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name: Remove Disqus Ads
+ * Plugin Name: Disqus Ads Disabler
  * Version: 1.0.2
  * Plugin URI: https://github.com/Muneebkh2/ads-disabler-disqus.git
  * Description: Remove annoying ads from Disqus Comments.
@@ -18,17 +18,17 @@
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 // Load plugin class files
-require_once( 'includes/class-remove-disqus-ads.php' );
+require_once( 'includes/class-ads-disabler-disqus.php' );
 
 /**
- * Returns the main instance of Remove_Disqus_Ads to prevent the need to use globals.
+ * Returns the main instance of Disable_Disqus_Ads to prevent the need to use globals.
  *
  * @since  1.0.0
- * @return object Remove_Disqus_Ads
+ * @return object Disable_Disqus_Ads
  */
-function Remove_Disqus_Ads () {
-	$instance = Remove_Disqus_Ads::instance( __FILE__, '1.0.0' );
+function Disable_Disqus_Ads () {
+	$instance = Disable_Disqus_Ads::instance( __FILE__, '1.0.0' );
 	return $instance;
 }
 
-Remove_Disqus_Ads();
+Disable_Disqus_Ads();
